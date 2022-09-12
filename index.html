@@ -13,10 +13,10 @@
             let moneda = parseFloat(document.getElementById("moneda").value)
 
             if(document.getElementById("dolar").checked){
-                alert("Total a recibir : " + (moneda * 0.26) +" dolares")
+                alert("Total a recibir : " + (moneda * 0.26).toFixed(2) +" dolares")
             }
             if(document.getElementById("euro").checked){
-                alert("Total a recibir : " + (moneda * 0.26) +" euros")
+                alert("Total a recibir : " + (moneda * 0.26).toFixed(2) +" euros")
             }
         }
     </script>
