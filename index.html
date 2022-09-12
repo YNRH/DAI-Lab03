@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab03</title>
+    <link rel="stylesheet" href="estilos.css">
+
+    <script>
+        function fconvertir(){
+            
+            let moneda = parseFloat(document.getElementById("moneda").value)
+
+            if(document.getElementById("dolar").checked){
+                alert("Total a recibir : " + (moneda * 0.26) +" dolares")
+            }
+            if(document.getElementById("euro").checked){
+                alert("Total a recibir : " + (moneda * 0.26) +" euros")
+            }
+        }
+    </script>
+</head>
+<body>
+    
+    <div>
+        <h1>CASA DE CAMBIO</h1>
+        <form class="formulario">  
+            <p>Selecionar moneda a enviar</p>
+    
+            <label><input type="radio" name="moneda" id="dolar" checked>Dólar</label>
+            <input type="radio" name="moneda" id="euro"> <label for="">Euro</label>
+    
+            <p>Ingresa monto:</p>
+            <input type="number" id="moneda" min="1" max="100000" placeholder="S/. 0.00"><br><br>
+    
+            <button type="button" onclick="fconvertir()">Cotizar</button>
+        </form>
+    </div>
+</body>
+</html>

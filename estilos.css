@@ -1,0 +1,47 @@
+body{
+    font-family: monospace;
+    font-size: 20px;
+    background: linear-gradient(rgba(9, 36, 32, 0.25), rgba(9, 36, 32, 0.25)), url(fondo.png) fixed;
+    background-size: cover;
+}
+h1{
+    border-bottom: rgb(48, 73, 92) solid 2px;
+}
+
+div{
+    width: 60%;
+    height: 350px;
+    background-color: rgba(9, 36, 32, 0.30);
+    text-align: center;
+    margin: 100px auto;
+}
+.formulario{
+    width: 90%;
+    height: 350px;
+    margin: auto;
+}
+input{
+    height: 30px;   
+}
+#moneda{
+    width: 50%;
+    border: rgb(220, 115, 104) solid 1px;
+    pad: 0px 10px;
+}
+button{
+    padding: 10px;
+    width: 60%;
+    border: none;
+    cursor: pointer;
+    background-color: goldenrod;
+    font-weight: bold;
+    font-size: large;
+    color: rgb(48, 72, 88);
+}
+#dolar, #euro{
+    width: 20px;
+    margin: 0px 16px;
+}
+div, #moneda, button{
+    border-radius: 5px;
+}
